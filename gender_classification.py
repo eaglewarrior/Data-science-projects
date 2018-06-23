@@ -27,9 +27,9 @@ clf_KNN.fit(X, Y)
 
 #testing the model all are using same data
 prediction = clf.predict([[190, 70, 43]])
-pred_svm = clf_svm.predict(X)
-pred_per = clf_perceptron.predict(X)
-pred_KNN = clf_KNN.predict(X)
+pred_svm = clf_svm.predict([[190, 70, 43]])
+pred_per = clf_perceptron.predict([[190, 70, 43]])
+pred_KNN = clf_KNN.predict([[190, 70, 43]])
 
 print(prediction)
 print pred_svm
